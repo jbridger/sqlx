@@ -33,7 +33,7 @@ impl PgConnection {
             ("TimeZone", "UTC"),
             // Adjust postgres to return precise values for floats
             // NOTE: This is default in postgres 12+
-            ("extra_float_digits", "3"),
+            ("extra_float_digits", "2"),
         ];
 
         if let Some(ref application_name) = options.application_name {
